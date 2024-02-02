@@ -37,8 +37,8 @@ public class EmployeeService {
         employeeEntity.setPosition(employeeRequest.getPosition());
         employeeEntity.setLastName(employeeRequest.getLastName());
         employeeEntity.setPhoneNumber(employeeRequest.getPhoneNumber());
-        employeeEntity.setUpdatedBy(employeeRequest.getUpdatedBy());
-        employeeEntity.setUpdatedDate(employeeRequest.getUpdatedDate());
+//        employeeEntity.setUpdatedBy(employeeRequest.getUpdatedBy());
+//        employeeEntity.setUpdatedDate(employeeRequest.getUpdatedDate());
         return employeeRepository.save(employeeEntity);
     }
 
@@ -48,8 +48,8 @@ public class EmployeeService {
 //        EmployeeEntity employeeEntity = getById(id).get(); เขียนได้2แบบ
         EmployeeEntity employeeEntity = employeeRepository.findById(id).get();
         employeeEntity.setEmployeeNo(employeeRequest.getEmployeeNo());
-        employeeEntity.setCreatedDate(employeeRequest.getCreatedDate());
-        employeeEntity.setCreatedBy(employeeRequest.getCreatedBy());
+//        employeeEntity.setCreatedDate(employeeRequest.getCreatedDate());
+//        employeeEntity.setCreatedBy(employeeRequest.getCreatedBy());
         employeeEntity.setEmail(employeeRequest.getEmail());
         employeeEntity.setFirstName(employeeRequest.getFirstName());
         employeeEntity.setDepartmentId(employeeRequest.getDepartmentId());

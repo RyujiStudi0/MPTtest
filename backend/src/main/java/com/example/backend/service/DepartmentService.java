@@ -31,8 +31,8 @@ public class DepartmentService {
         departmentEntity.setDepartmentName(departmentRequest.getDepartmentName());
         departmentEntity.setHeadOfDepartment(departmentRequest.getHeadOfDepartment());
         departmentEntity.setCreatedDate(currentDate);
-        departmentEntity.setUpdatedBy(departmentRequest.getUpdatedBy());
-        departmentEntity.setUpdatedDate(departmentRequest.getUpdatedDate());
+//        departmentEntity.setUpdatedBy(departmentRequest.getUpdatedBy());
+//        departmentEntity.setUpdatedDate(departmentRequest.getUpdatedDate());
         return departmentRepository.save(departmentEntity);
     }
 
@@ -40,10 +40,10 @@ public class DepartmentService {
         Calendar calendar = Calendar.getInstance();
         Date currentDate = calendar.getTime();
         DepartmentEntity departmentEntity = departmentRepository.findById(id).get();
-        departmentEntity.setCreatedBy(departmentRequest.getCreatedBy());
+//        departmentEntity.setCreatedBy(departmentRequest.getCreatedBy());
         departmentEntity.setDepartmentName(departmentRequest.getDepartmentName());
         departmentEntity.setHeadOfDepartment(departmentRequest.getHeadOfDepartment());
-        departmentEntity.setCreatedDate(departmentRequest.getCreatedDate());
+//        departmentEntity.setCreatedDate(departmentRequest.getCreatedDate());
         departmentEntity.setUpdatedBy(departmentRequest.getUpdatedBy());
         departmentEntity.setUpdatedDate(currentDate);
         return departmentRepository.save(departmentEntity);

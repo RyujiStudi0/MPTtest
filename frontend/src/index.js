@@ -12,7 +12,6 @@ export default function App() {
         <Route path="/" element={<LayoutComponent />}>
           <Route index element={<EmployeeComponent />} />
           <Route path="DepartmentComponent" element={<DepartmentComponent />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>
