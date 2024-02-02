@@ -7,4 +7,4 @@
 - Reload Maven and Run
 
 3.Run Frontend
-- Open Frontend in VScode and npm start
+- Open Frontend in VScode and npm install -> npm start
